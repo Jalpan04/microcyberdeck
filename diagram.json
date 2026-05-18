@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "author": "Cyberdeck Builder",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-pi-pico-w", "id": "pico", "top": -3.25, "left": 70.75, "attrs": {} },
+    {
+      "type": "wokwi-ili9341",
+      "id": "display",
+      "top": -162.4,
+      "left": 230.1,
+      "attrs": { "lit": "1" }
+    },
+    { "type": "wokwi-membrane-keypad", "id": "keypad", "top": 180.4, "left": 264.8, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 56.3, "left": -38.6, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GND.4", "display:GND", "black", [ "v0" ] ],
+    [ "pico:3V3", "display:VCC", "red", [ "v0" ] ],
+    [ "pico:GP18", "display:SCK", "yellow", [ "v0" ] ],
+    [ "pico:GP19", "display:MOSI", "blue", [ "v0" ] ],
+    [ "pico:GP17", "display:CS", "orange", [ "v0" ] ],
+    [ "pico:GP20", "display:D/C", "green", [ "v0" ] ],
+    [ "pico:GP21", "display:RESET", "purple", [ "v0" ] ],
+    [ "pico:3V3", "display:LED", "white", [ "v0" ] ],
+    [ "pico:GP2", "keypad:R1", "gray", [ "v0" ] ],
+    [ "pico:GP3", "keypad:R2", "gray", [ "v0" ] ],
+    [ "pico:GP4", "keypad:R3", "gray", [ "v0" ] ],
+    [ "pico:GP5", "keypad:R4", "gray", [ "v0" ] ],
+    [ "pico:GP6", "keypad:C1", "cyan", [ "v0" ] ],
+    [ "pico:GP7", "keypad:C2", "cyan", [ "v0" ] ],
+    [ "pico:GP8", "keypad:C3", "cyan", [ "v0" ] ],
+    [ "pico:GP9", "keypad:C4", "cyan", [ "v0" ] ],
+    [ "pot1:GND", "pico:GND.1", "black", [ "v0" ] ],
+    [ "pot1:VCC", "pico:3V3", "red", [ "v0" ] ],
+    [ "pot1:SIG", "pico:GP26", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
