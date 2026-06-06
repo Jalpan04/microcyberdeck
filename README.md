@@ -1,5 +1,7 @@
 # MicroCyberdeck
 
+![GitHub top language](https://img.shields.io/github/languages/top/Jalpan04/microcyberdeck) ![GitHub repo size](https://img.shields.io/github/repo-size/Jalpan04/microcyberdeck) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A MicroPython-based mini-operating system and hardware interface simulation for a pocket-sized Cyberdeck. Built to run on an ESP32 or Raspberry Pi Pico inside the Wokwi hardware simulator, featuring an ILI9341 TFT display and keypad.
 
 ## Features
